@@ -2,7 +2,7 @@ services:
   # Private Service for MS SQL Server
   - type: pserv
     name: db
-    plan: starter # Choose a plan that fits your needs (e.g., standard)
+    plan: starter # Choose a plan that fits your needs
     env: docker
     dockerImage: mcr.microsoft.com/mssql/server:2019-latest
     envVars:
@@ -38,23 +38,16 @@ services:
           name: db
           envVarKey: SA_PASSWORD
     autoDeploy: no # Recommend 'no' until initial setup is stable
-
-  # Job to initialize the database
-  - type: job
-    name: db-init
-    plan: starter
-    startCommand: |
-      # Wait for DB to be available
-      sleep 30 
-      /opt/mssql-tools/bin/sqlcmd -S db -U sa -P $SA_PASSWORD -Q 'CREATE DATABASE [swp_tech];'
-      /opt/mssql-tools/bin/sqlcmd -S db -U sa -P $SA_PASSWORD -d swp_tech -i /db_scripts/db.sql
-    envVars:
-      - key: SA_PASSWORD
-        fromService:
-          type: pserv
-          name: db
-          envVarKey: SA_PASSWORD
-    # This job needs access to the db.sql file and mssql-tools
-    # We create a small docker image for this job
-    dockerfilePath: ./db-init.Dockerfile
-    dockerContext: . 
+    initialDeployHook: |
+      echo "Starting database initialization..."
+      # The base tomcat image is debian-based. We will install mssql-tools.
+      apt-get update && apt-get install -y curl gnupg
+      curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+      curl https://packages.microsoft.com/config/debian/11/prod.list > /etc/apt/sources.list.d/mssql-release.list
+      apt-get update && ACCEPT_EULA=Y apt-get install -y mssql-tools unixodbc-dev
+      echo "Waiting 45s for the database to be ready..."
+      sleep 45
+      echo "Running database setup script..."
+      /opt/mssql-tools/bin/sqlcmd -S $DB_HOST -U $DB_USER -P $DB_PASSWORD -Q 'IF DB_ID(N''swp_tech'') IS NULL CREATE DATABASE [swp_tech];'
+      /opt/mssql-tools/bin/sqlcmd -S $DB_HOST -U $DB_USER -P $DB_PASSWORD -d $DB_NAME -i ./db/db.sql
+      echo "Database initialization finished." 
