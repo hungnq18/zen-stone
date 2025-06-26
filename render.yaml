@@ -2,9 +2,11 @@ services:
   # Private Service for MS SQL Server
   - type: pserv
     name: db
-    plan: starter # Choose a plan that fits your needs
-    env: docker
-    dockerImage: mcr.microsoft.com/mssql/server:2019-latest
+    # Disks require a paid plan like 'standard'
+    plan: standard
+    env: image
+    image:
+      url: mcr.microsoft.com/mssql/server:2019-latest
     envVars:
       - key: ACCEPT_EULA
         value: "Y"
