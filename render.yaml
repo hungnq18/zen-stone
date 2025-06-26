@@ -14,7 +14,7 @@ services:
         value: "Y"
       - key: SA_PASSWORD
         sync: false # Set this manually in the Render dashboard for security
-    disks:
+    disks:D
       - name: mssql-data
         mountPath: /var/opt/mssql
         sizeGB: 10 # Adjust size as needed

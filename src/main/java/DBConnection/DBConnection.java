@@ -14,15 +14,11 @@ public class DBConnection {
         try { 
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             
-            String dbHost = System.getenv("DB_HOST");
-            String dbName = System.getenv("DB_NAME");
-            String dbUser = System.getenv("DB_USER");
-            String dbPassword = System.getenv("DB_PASSWORD");
-
-            if (dbHost == null) dbHost = "localhost";
-            if (dbName == null) dbName = "swp_tech";
-            if (dbUser == null) dbUser = "hungnq18";
-            if (dbPassword == null) dbPassword = "123";
+            // Read from Java System Properties, with fallbacks for local development
+            String dbHost = System.getProperty("db.host", "localhost");
+            String dbName = System.getProperty("db.name", "swp_tech");
+            String dbUser = System.getProperty("db.user", "hungnq18");
+            String dbPassword = System.getProperty("db.password", "123");
 
             String urlConnect = String.format("jdbc:sqlserver://%s:1433;databasename=%s;user=%s;password=%s;characterEncoding=UTF-8;encrypt=true;trustServerCertificate=true;",
                                               dbHost, dbName, dbUser, dbPassword);
