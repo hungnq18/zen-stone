@@ -4,9 +4,9 @@ services:
     name: db
     # Disks require a paid plan like 'standard'
     plan: standard
-    env: image
-    image:
-      url: mcr.microsoft.com/mssql/server:2019-latest
+    env: docker
+    dockerfilePath: ./db.Dockerfile
+    dockerContext: .
     envVars:
       - key: ACCEPT_EULA
         value: "Y"
