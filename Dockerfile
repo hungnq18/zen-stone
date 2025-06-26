@@ -13,10 +13,8 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Copy the built WAR file from the build stage to Tomcat's webapps directory
 COPY --from=build /app/target/SWP_TECH-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
-# Debug: Liệt kê file WAR và file JSP sau khi copy để kiểm tra deploy
-RUN ls -l /usr/local/tomcat/webapps/ && \
-    mkdir -p /usr/local/tomcat/webapps/ROOT && \
-    cd /usr/local/tomcat/webapps/ROOT && ls -l || true
+# Debug: Liệt kê file WAR sau khi copy để kiểm tra deploy
+RUN ls -l /usr/local/tomcat/webapps/
 
 # Create a setenv.sh file to configure Tomcat's JVM options.
 # This is a more robust way to pass database credentials from Render's environment variables.
