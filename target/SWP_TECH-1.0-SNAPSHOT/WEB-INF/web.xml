@@ -230,7 +230,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HomeUserController</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/home</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
