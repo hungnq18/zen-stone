@@ -1,0 +1,60 @@
+services:
+  # Private Service for MS SQL Server
+  - type: pserv
+    name: db
+    plan: starter # Choose a plan that fits your needs (e.g., standard)
+    env: docker
+    dockerImage: mcr.microsoft.com/mssql/server:2019-latest
+    envVars:
+      - key: ACCEPT_EULA
+        value: "Y"
+      - key: SA_PASSWORD
+        sync: false # Set this manually in the Render dashboard for security
+    disks:
+      - name: mssql-data
+        mountPath: /var/opt/mssql
+        sizeGB: 10 # Adjust size as needed
+
+  # Your Web Application Service
+  - type: web
+    name: swp-tech-webapp
+    plan: starter # Or your desired plan
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: DB_HOST
+        fromService:
+          type: pserv
+          name: db
+          property: host
+      - key: DB_NAME
+        value: swp_tech
+      - key: DB_USER
+        value: sa
+      - key: DB_PASSWORD
+        fromService:
+          type: pserv
+          name: db
+          envVarKey: SA_PASSWORD
+    autoDeploy: no # Recommend 'no' until initial setup is stable
+
+  # Job to initialize the database
+  - type: job
+    name: db-init
+    plan: starter
+    startCommand: |
+      # Wait for DB to be available
+      sleep 30 
+      /opt/mssql-tools/bin/sqlcmd -S db -U sa -P $SA_PASSWORD -Q 'CREATE DATABASE [swp_tech];'
+      /opt/mssql-tools/bin/sqlcmd -S db -U sa -P $SA_PASSWORD -d swp_tech -i /db_scripts/db.sql
+    envVars:
+      - key: SA_PASSWORD
+        fromService:
+          type: pserv
+          name: db
+          envVarKey: SA_PASSWORD
+    # This job needs access to the db.sql file and mssql-tools
+    # We create a small docker image for this job
+    dockerfilePath: ./db-init.Dockerfile
+    dockerContext: . 

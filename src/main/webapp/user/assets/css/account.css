@@ -1,0 +1,105 @@
+/* main form login */
+.img-account img {
+    width: 100%;
+}
+
+.box-img-account ul {
+    color: white;
+}
+.img-account {
+    position: relative;
+}
+.box-img-account {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.img-account h1 {
+    font-size: 45px;
+}
+
+.box-img-account ul {
+    display: flex;
+    list-style: none;
+    font-size: 1.6rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.box-img-account ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+section.form-inf {
+    padding: 30px 100px;
+    font-size: 1.6rem;
+    width: 1000px;
+    margin: auto;
+}
+
+.form-inf .nav.nav-pills {
+    display: flex;
+    gap: 20px;
+}
+.form-inf .nav-item-auth {
+    width: calc(50% - 10px);
+}
+.form-inf .nav-item-auth.forget-password {
+    width: 100%;
+}
+.form-inf .nav-item-auth .nav-link-auth{
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    background: #e1dede;
+    border-radius: 4px;
+    color: rgb(141, 141, 141);
+    font-weight: 400;
+}
+.form-inf .nav-item-auth .nav-link-auth.active {
+    background-color: var(--color-hover-text);
+    color: #fff;
+}
+.form__login{
+    width: 100%;
+    margin: auto;
+}
+.form-outline label,
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.btn.btn-primary.btn-submit-form {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 50px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 1px solid transparent;
+    background-color: var(--color-hover-text);
+}
+
+.btn.btn-primary.btn-submit-form:hover {
+    color: #333;
+    background-color: #fff;
+    border-color: var(--color-hover-text);
+}
+
+.box-config-account div a {
+    text-decoration: none;
+}

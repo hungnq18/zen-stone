@@ -1,0 +1,55 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+.form-group + .form-group {
+    margin-top: 15px;
+}
+.form-label {
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.form-outline input,
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+} 
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 1px solid rgba(29, 191, 175, 0.2);
+    box-shadow: 0px 0px 2px rgba(29, 191, 175, 0.8);
+}
+
+.form-submit {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border: none;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 18px;
+    font-size: 16px;
+}
+
+.message_error {
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+.form-group.invalid .form-control,
+.form-group.invalid textarea {
+    border: 1px solid #f33a58 !important;
+    box-shadow: 0px 0px 2px rgba(221, 5, 23, 0.8);
+}
+
+.form-group .message_error {
+    color: #f33a58;
+}

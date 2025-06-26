@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+    --main-background-color: #495057;
+    --text-color-white: #fff;
+    --border-color-main: rgba(255, 255, 255, 0.1);
+    --color-hover-text: #fcbe00;
+    --border-default-button:#e5e5e5;
+    --border-button-active: #fcbe00;
+    --transition-text: all 0.3s linear;
+    /* width */
+    --width-mini-cart: 400px;
+    /* height */
+    --height-header: 198px;
+    --banner-height: calc(100vh - var(--height-header));
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.box-voucher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.box-voucher .btn {
+    padding: 5px 15px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.message-voucher {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    color: #09863e;
+}

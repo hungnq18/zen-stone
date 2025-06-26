@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/sliderRange.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- information of company -->
+        <div class="nav-info">
+          <div class="nav-info-left">
+            <ul class="nav-info-left-list">
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link">thegiodidong</a>
+              </li>
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link"
+                  >Need Help? +001 123 456 789</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-info-right">
+            <ul class="nav-info-left-list">
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link">About us</a>
+              </li>
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- header with search -->
+        <div class="nav-with-search row m-0">
+          <div class="logo col-lg-2 col-12">
+            <img
+              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/logo/logo1.svg"
+              alt=""
+            />
+          </div>
+          <div class="search col-lg-8 col-8">
+            <div class="btn-menu-mobile hide-on-laptop hide-on-tablet">
+              <i class="bx bx-menu"></i>
+            </div>
+            <form action="">
+              <div class="box-input-search">
+                <input
+                  type="text"
+                  name="key"
+                  id="search"
+                  placeholder="Search..."
+                />
+                <button class="btn btn-search">
+                  <i class="bx bx-search-alt-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="user-function col-lg-2 col-4">
+            <ul class="list-user-function">
+              <li class="user-function-item">
+                <a href="" class="user-function-item-link">
+                  <i class="bx bx-user"></i>
+                  <span>Login</span>
+                </a>
+              </li>
+              <li class="user-function-item cart">
+                <a href="" class="user-function-item-link">
+                  <i class="bx bx-shopping-bag"></i>
+                  <span class="hide-on-mobile">Your cart</span>
+                  <span class="number-of-cart">1</span>
+                </a>
+                <div class="view-cart-mini">
+                  <div class="header-cart-mini">
+                    <h2>Your cart</h2>
+                    <span>(2 item)</span>
+                  </div>
+                  <div class="main-mini-cart">
+                    <ul class="list-mini-cart">
+                      <li class="item-mini-cart">
+                        <img
+                          src="https://wphix.com/template/dukamarket/dukamarket/assets/img/cart/20.jpg"
+                          alt=""
+                        />
+                        <div class="content-mini-cart">
+                          <p class="item-cart-name">
+                            Samsung C49J89: £875, Debenhams Plus
+                          </p>
+                          <span class="item-cart-price">$326</span>
+                        </div>
+                      </li>
+                      <li class="item-mini-cart">
+                        <img
+                          src="https://wphix.com/template/dukamarket/dukamarket/assets/img/cart/20.jpg"
+                          alt=""
+                        />
+                        <div class="content-mini-cart">
+                          <p class="item-cart-name">
+                            Samsung C49J89: £875, Debenhams Plus
+                          </p>
+                          <span class="item-cart-price">$326</span>
+                        </div>
+                      </li>
+                      <li class="item-mini-cart">
+                        <img
+                          src="https://wphix.com/template/dukamarket/dukamarket/assets/img/cart/20.jpg"
+                          alt=""
+                        />
+                        <div class="content-mini-cart">
+                          <p class="item-cart-name">
+                            Samsung C49J89: £875, Debenhams Plus
+                          </p>
+                          <span class="item-cart-price">$326</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="total-mini-cart">
+                      <span class="total-mini-cart-title">Subtotal</span>
+                      <span class="total-mini-cart-title active">$255.00</span>
+                    </div>
+                    <div class=".active">
+                      <button class="btn btn-mini-cart active">
+                        View cart
+                      </button>
+                      <button class="btn btn-mini-cart">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- main navigation -->
+        <div class="overlay"></div>
+        <nav class="navbar">
+          <div class="hide-on-laptop hide-on-tablet btn-close-menu">
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="list-nav">
+            <li class="nav-item">
+              <a href="../.." class="nav-item-link">Home</a>
+            </li>
+            <li class="nav-item have-dropdown">
+              <a href="./product.html" class="nav-item-link">
+                Product
+                <i class="bx bx-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu-custom">
+                <ul class="list-menu-dropdown">
+                  <li class="item-menu-dropdown">
+                    <a href="../.." class="item-menu-dropdown-link">Home</a>
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./assets/html/product.html" class="item-menu-dropdown-link">Product page</a>
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./404.html" class="item-menu-dropdown-link">404</a>           
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./itemProduct.html" class="item-menu-dropdown-link">Details product</a>                    
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./yourCart.html" class="item-menu-dropdown-link">Cart</a>
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./auth.html" class="item-menu-dropdown-link">Account</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-item-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-item-link">Contact</a>
+            </li>
+          </ul>
+          <div class="box-message-free-ship">
+            <span>Spend $120 more and get free shipping!</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="wrapper-product">
+            <div class="container">
+                <div class="row m-0 p-0">
+                  <div class="col-12 col-lg-3">
+                    <!-- filter -->
+                    <div class="box-show-filter-mobile hide-on-laptop">
+                        <h3>Show filter</h3>
+                        <i class='bx bx-chevron-down' onclick="toggleFilter(this)"></i>
+                    </div>
+                      <div class="wrapper-filter">
+                          <div class="filter-category">
+                              <div class="header-filter">
+                                  <h2>Product categories</h2>
+                              </div>
+                              <div class="list-filter">
+                                  <ul class="list">
+                                      <li class="filter-item">
+                                          <input type="checkbox" name="category-filter" id="category-filter-1">
+                                          <label for="category-filter-1">
+                                              Samsung
+                                              <span class="category-number-product">(20)</span>
+                                          </label>
+                                      </li>
+                                      <li class="filter-item">
+                                          <input type="checkbox" name="category-filter" id="category-filter-2">
+                                          <label for="category-filter-2">
+                                              Samsung
+                                          </label>
+                                      </li>
+                                      <li class="filter-item">
+                                          <input type="checkbox" name="category-filter" id="category-filter-3">
+                                          <label for="category-filter-3">
+                                              Samsung
+                                          </label>
+                                      </li>
+                                      <li class="filter-item">
+                                          <input type="checkbox" name="category-filter" id="category-filter-4">
+                                          <label for="category-filter-4">
+                                              Samsung
+                                          </label>
+                                      </li>
+                                      
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="filter-by-price">
+                              <div class="header-filter">
+                                  <h2>Filter By Price</h2>
+                              </div>
+                              <div class="wraper-filler-range">
+                                  <div class="row">
+                                    <div class="col-sm-12">
+                                      <div id="slider-range"></div>
+                                    </div>
+                                  </div>
+                                  <div class="row slider-labels">
+                                    <div class="col-xs-6 caption">
+                                      <input type="hidden" name="form-price" id="input-from-price">
+                                      <strong>Min:</strong> <span id="slider-range-value1"></span>
+                                    </div>
+                                    <div class="col-xs-6 text-right caption">
+                                      <input type="hidden" name="to-price" id="input-to-price">
+                                      <strong>Max:</strong> <span id="slider-range-value2"></span>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="box-send-filter">
+                            <button class="btn btn-filter">Filter</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-lg-9">
+                    <!-- products -->
+                      <div class="list-product">
+                        <!-- filter by time -->
+                        <div class="wrapper-header-product">
+                          <div class="message-show-item">
+                            <span>Showing 1-20 of 29 relults</span>
+                          </div>
+                          <div class="filter-by-time">
+                            <select name="filter-by-time">
+                              <option value="">New</option>
+                              <option value="">Latest</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row m-0 p-0">
+                          <div class="card col-6 col-lg-3">
+                              <img
+                              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/product/tp-1.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <h5 class="card-text name">
+                                  Vifa Bluetooth Portable Wireless Speaker Vifa Bluetooth
+                                  Portable Wireless Speaker
+                              </h5>
+                              <p class="card-text price">150$-170$</p>
+                              <div class="add-to-cart">
+                                  <button class="btn btn-mini-cart active">
+                                  Add to cart
+                                  </button>
+                              </div>
+                              </div>
+                              <div class="sale">
+                                  <span>-9%</span>
+                              </div>
+                          </div> 
+                          <div class="card col-6 col-lg-3">
+                              <img
+                              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/product/tp-1.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <h5 class="card-text name">
+                                  Vifa Bluetooth Portable Wireless Speaker Vifa Bluetooth
+                                  Portable Wireless Speaker
+                              </h5>
+                              <p class="card-text price">150$-170$</p>
+                              <div class="add-to-cart">
+                                  <button class="btn btn-mini-cart active">
+                                  Add to cart
+                                  </button>
+                              </div>
+                              </div>
+                              <div class="sale">
+                              <span>-9%</span>
+                              </div>
+                          </div> 
+                          <div class="card col-6 col-lg-3">
+                              <img
+                              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/product/tp-1.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <h5 class="card-text name">
+                                  Vifa Bluetooth Portable Wireless Speaker Vifa Bluetooth
+                                  Portable Wireless Speaker
+                              </h5>
+                              <p class="card-text price">150$-170$</p>
+                              <div class="add-to-cart">
+                                  <button class="btn btn-mini-cart active">
+                                  Add to cart
+                                  </button>
+                              </div>
+                              </div>
+                              <div class="sale">
+                              <span>-9%</span>
+                              </div>
+                          </div> 
+                          <div class="card col-6 col-lg-3">
+                              <img
+                              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/product/tp-1.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <h5 class="card-text name">
+                                  Vifa Bluetooth Portable Wireless Speaker Vifa Bluetooth
+                                  Portable Wireless Speaker
+                              </h5>
+                              <p class="card-text price">150$-170$</p>
+                              <div class="add-to-cart">
+                                  <button class="btn btn-mini-cart active">
+                                  Add to cart
+                                  </button>
+                              </div>
+                              </div>
+                              <div class="sale">
+                              <span>-9%</span>
+                              </div>
+                          </div> 
+                          <div class="card col-6 col-lg-3">
+                              <img
+                              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/product/tp-1.jpg"
+                              class="card-img-top"
+                              alt="..."
+                              />
+                              <div class="card-body">
+                              <h5 class="card-text name">
+                                  Vifa Bluetooth Portable Wireless Speaker Vifa Bluetooth
+                                  Portable Wireless Speaker
+                              </h5>
+                              <p class="card-text price">150$-170$</p>
+                              <div class="add-to-cart">
+                                  <button class="btn btn-mini-cart active">
+                                  Add to cart
+                                  </button>
+                              </div>
+                              </div>
+                              <div class="sale">
+                              <span>-9%</span>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- pagination -->
+                      <div class="pagination">
+                        <nav>
+                          <ul class="pagination-list">
+                              <li class="pagination-item"><a class="pagination-link" href="">«</a></li>
+                              <li class="pagination-item"><a class="pagination-link" href="">1</a></li>
+                              <li class="pagination-item"><a class="pagination-link" href="">2</a></li>
+                              <li class="pagination-item"><a class="pagination-link" href="">3</a></li>
+                              <li class="pagination-item"><a class="pagination-link" href="">4</a></li>
+                              <li class="pagination-item"><a class="pagination-link" href="">»</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <section class="connectpp">
+        <div class="section-contect">
+            <div class="container">
+              <div class="row m-0 p-0">
+                <div class="followst col-12 col-lg-4">
+                    <h5>Follow us</h5>
+                    <p class="followft-p">
+                        We make consolidating, marketing and tracking your social media website easy.
+                    </p>
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="contact-social facebook" href="#">
+                          <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a class="contact-social twitter" href="#">
+                          <i class='bx bxl-twitter' ></i>
+                        </a>
+                        <a class="contact-social youtube" href="#">
+                          <i class='bx bxl-youtube' ></i>
+                        </a>
+                        <a class="contact-social linkedin" href="#">
+                          <i class='bx bxl-linkedin' ></i>
+                        </a>
+                    </section>
+                </div>
+                <div class="followst col-12 col-lg-4">
+                    <h5>Follow us</h5>
+                    <p class="followft-p">
+                        We make consolidating, marketing and tracking your social media website easy.
+                    </p>
+                    <div class="boxst">
+                        <form action="" class="form-section">
+                          <div class="box-input-search section-box">
+                            <input type="text" name="key" id="search" placeholder="Enter your email" />
+                            <button class="btn btn-search">
+                              SUBSCRIBE
+                            </button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="followst col-12 col-lg-4">
+                    <h5>Follow us</h5>
+                    <p class="followft-p">
+                        DukaMarket App is now available on App Store & Google Play. Get it now.
+                    </p>
+                    <div class="boxst subboxst">
+                        <img src="https://wphix.com/template/dukamarket/dukamarket/assets/img/brand/app_ios.png" alt="">
+                        <img src="https://wphix.com/template/dukamarket/dukamarket/assets/img/brand/app_android.png" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <div class="footer-about">
+          <div class="container">
+            <div class="row m-0 p-0">
+              <div class="customer col-12 col-lg-4">
+                <h5>customer Care</h5>
+                <div class="sub-customer">
+                    <ul>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="customer col-12 col-lg-4">
+                  <h5>customer Care</h5>
+                  <div class="sub-customer">
+                      <ul>
+                          <li><a href="">New Customer</a></li>
+                          <li><a href="">New Customer</a></li>
+                          <li><a href="">New Customer</a></li>
+                          <li><a href="">New Customer</a></li>
+                          <li><a href="">New Customer</a></li>
+                          <li><a href="">New Customer</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="customer navcustomer col-12 col-lg-4">
+                  <h5>customer Care</h5>
+                  <div class="sub-customer">
+                      <p>Our mission statement is to provide the absolute best customer experience available in the
+                          Electronic industry without exception.</p>
+                      <div class="navcustomer-img">
+                          <i class='bx bxs-phone'></i>
+                          <ul>
+                              <li><a href="">Got Question? Call us 24/7!</a></li>
+                              <li><a style="color: yellow;font-size: 2.1rem;" href="">0939316934</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="aboutUS">
+          <div class="navaboutus">
+              <p>Copyright © DukaMarket. All Rights Reserved. Powered by Theme_Pure.Copyright</p>
+          </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/sliderRange.js"></script>
+  </body>
+</html>

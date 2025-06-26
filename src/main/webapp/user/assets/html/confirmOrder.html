@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm order</title>
+    <style>
+        .header {
+            margin: 10px 0px;
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fcbe00;
+        }
+        .list-info {
+            list-style: none;
+            padding: 0 5px;
+            margin: 0;
+        }
+        .item-info {
+            padding: 5px 0px;
+        }
+        .title-info {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .content-info {
+            font-style: italic;
+            font-size: 16px;
+        }
+        .order-product {
+            width: 100%;
+        }
+        .order-product table  {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px solid #333;
+        }
+        .order-product table th {
+            font-weight: bold;
+            color: #fff;
+            background-color: #fcbe00;
+        }
+        .order-product table th,
+        .order-product table td {
+            border: 1px solid #333;
+            padding: 7px 0px;
+        }
+        .order-product table .total {
+            background-color: #e4e4e4;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .thank p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Order confirmation</h2>
+        </div>
+        <div class="main-order">
+            <div class="info-order">
+                <ul class="list-info">
+                    <li class="item-info">
+                        <span class="title-info">Full name: </span>
+                        <span class="content-info">Le Tan Kim</span>
+                    </li>
+                    <li class="item-info">
+                        <span class="title-info">Email: </span>
+                        <span class="content-info">KimLTCE170469@fpt.edu.vn</span>
+                    </li>
+                    <li class="item-info">
+                        <span class="title-info">Phone: </span>
+                        <span class="content-info">0865341745</span>
+                    </li>
+                    <li class="item-info">
+                        <span class="title-info">Address: </span>
+                        <span class="content-info">Thanh loi, thanh loc, giong rieng, kien giang</span>
+                    </li>
+                    <li class="item-info">
+                        <span class="title-info">Address-details: </span>
+                        <span class="content-info">Thanh loi, thanh loc, giong rieng, kien giang</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="order-product">
+                <h2>Products</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>.No</th>
+                            <th>Name product</th>
+                            <th>Number of product</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Iphone 15</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>100</td>
+                        </tr>
+                        <tr class="total">
+                            <td colspan="4">Total order </td>
+                            <td colspan="4">100 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="thank">
+            <p>Thank you for buy product in our website. Have a nice day</p>
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+</html>

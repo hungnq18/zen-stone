@@ -1,0 +1,320 @@
+@media (max-width: 768px) {
+
+    /* header */
+    .hide-on-mobile {
+        display: none !important;
+    }
+    :root {
+        /* height */
+        --height-header: 100%;
+        --banner-height: 400px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .box-input-search {
+        padding: 0;
+    }
+    .nav-info-left {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .nav-info-left-list {
+        justify-content: space-between;
+    }
+    .nav-info-left-list-item:nth-child(odd)::before {
+        display: none;
+    }
+    .nav-info-right {
+        display: none;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-menu-mobile {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 6rem;
+    }
+    /* view mini cart */
+    .view-cart-mini {
+        width: 300px;
+    }
+
+    /* navbar */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--main-background-color);
+        width: 50%;
+        z-index: 999999999;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: all 0.5s;
+    }
+
+    .navbar .list-nav {
+        margin-top: 20px;
+        width: 100%;
+        flex-direction: column;
+        transition: all 0.5s linear;
+    }
+
+    .nav-item {
+        transition: all 0.5s linear;
+    }
+
+    .nav-item-link {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-menu-custom {
+        background: unset;
+        max-width: 100%;
+        position: unset;
+        display: none;
+        animation: dropdownMenuCustom 0.2s linear forwards;
+    }
+
+    .nav-item.have-dropdown:hover .dropdown-menu-custom {
+        position: unset;
+        visibility: visible;
+        display: block;
+    }
+
+    .item-menu-dropdown-link {
+        color: #fff;
+    }
+
+    .box-message-free-ship {
+        text-align: center;
+        padding: 5px 0px;
+        font-size: 1.4rem;
+        border-top: 1px solid #eee;
+    }
+
+    /* overlay */
+    .overlay {
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999999999;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
+
+    .overlay.active,
+    .navbar.active {
+        transform: translateX(0);
+    }
+
+    .btn-close-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    /* banner */
+    .carousel-item.active   {
+        width: 200%;
+        transform: translateX(-50%);
+    }
+    .banner .carousel.slide img{
+        width: 100%;
+    }
+    /* product */
+    .header-product {
+        padding: 0 5px;
+    }
+    .products .card .box-img {
+        height: 260px;
+        overflow: hidden;
+    } 
+    .list-category {
+        justify-content: center;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .title-products::before {
+       display: none;
+    }
+    .flex-column-mobile {
+        flex-direction: column;
+    }
+    .title-products {
+        text-align: center;
+    }
+    .list-category .category-item {
+        font-size: 1.2rem;
+    }
+    .box-count-down-time {
+        margin-top: 10px;
+    }
+    /* slick */
+    .slick-arrow {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    .slick-prev.slick-arrow {
+        left: 0px;
+    }
+    .slick-next.slick-arrow {
+        right: 0px;
+    }
+    /* product page */
+    /* show filter box */
+    .box-show-filter-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+    }
+    .box-show-filter-mobile h3 {
+        margin: 0;
+        font-size: 1.9rem;
+    }
+    .box-show-filter-mobile i {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .wrapper-filter {
+        display: none;
+    }
+    .wrapper-filter.active {
+        display: block;
+    }
+    /* footer */
+    .connectpp .section-contect .followst {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .footer-about .customer {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .footer-about .customer.navcustomer .sub-customer p {
+        text-align: center;
+    }
+    .footer-about .customer.navcustomer .navcustomer-img {
+        width: 100%;
+        justify-content: center;
+    }
+    /* item product */
+    .img-product .row {
+        flex-direction: column-reverse;
+    }
+    .list-img-desc {
+        overflow-x: auto;
+    }
+    .list-img-desc::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    .item-img-desc img {
+        min-width: 70px;
+    }
+    .list-img-desc {
+        flex-direction: row;
+    }
+    .item-img-desc {
+        padding: 5px;
+        border: 1px solid #e5e5e5;
+        cursor: pointer;
+    }
+    /* account */
+    .box-img-account h1  {
+        font-size: 3rem;
+        text-align: center;
+    }
+    section.form-inf {
+        width: 100%;
+        padding: 20px;
+    }
+    /* cart */
+    .box-thanh-toan {
+        width: 100%;
+    }
+    /* personal pop  up */
+    .pop-up {
+        width: 90%;
+    }
+}
+
+@keyframes dropdownMenuCustom {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    :root {
+        /* height */
+        --height-header: 100%;
+        --banner-height: 400px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199.98px) {
+    html {
+        font-size: 70%;
+    }
+    :root {
+        /* height */
+        --height-header: 100%;
+        --banner-height: 400px;
+    }
+    html {
+        font-size: 45%;
+    }
+    .hide-on-laptop {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hide-on-laptop {
+        display: none;
+    }
+}

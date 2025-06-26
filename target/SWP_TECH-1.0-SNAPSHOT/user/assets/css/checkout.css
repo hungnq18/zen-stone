@@ -1,0 +1,126 @@
+.wrapper-checkout {
+    margin: 30px 0;
+}
+.box-ordered {
+    padding: 15px 10px;
+    width: 100%;
+}
+.ordered-title {
+    font-size: 3rem;
+}
+.list-ordered {
+    padding: 0;
+    margin: 0;
+}
+.item-ordered {
+    display: flex;
+}
+.ordered-item-title {
+    font-size: 1.5rem;
+    padding: 15px 5px;
+    width: 50%;
+    color: #6f7172;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0;
+}
+.ordered-item-title.black-bold {
+    color: #000;
+    font-weight: bold;
+}
+.number-of-ordered {
+    font-weight: 600;
+}
+/* information ordered */
+.box-info-ordered {
+    width: 100%;
+    padding: 15px 10px;
+    border: 3px solid #e4e4e4;
+}
+.form-group-ordered {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.form-group-ordered label {
+    font-size: 1.5rem;
+    color: #6f7172;
+    
+}
+.form-group-ordered>label  {
+    margin-bottom: 4px;
+}
+.form-group-ordered label .required {
+    color: red;
+}
+.form-group-ordered input,
+.form-group-ordered select {
+    font-size: 1.4rem;
+    padding: 10px 5px;
+    outline: none;
+    border: 1px solid #e4e4e4;
+}
+.box-choose {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-choose .group-pay {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.desc-credit-method,
+.desc-cash-method {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #f0f1f2;
+    color: #666;
+    display: none;
+}
+
+.desc-credit-method.active,
+.desc-cash-method.active {
+    display: block;
+}
+
+.desc-credit-method p,
+.desc-cash-method p {
+    margin: 0;
+}
+
+.box-btn-ordered {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-submit-ordered {
+    padding: 15px 0;
+    width: 100%;
+    outline: none;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+    background-color: #fcbe00;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.btn-submit-ordered:hover {
+    border-color: #fcbe00;
+    background-color: #fff;
+    color: #333;
+}
+
+.message-login-user-voucher {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 5px 3px;
+    border-radius: 3px;
+}
+
+.message-login-user-voucher a {
+    text-decoration: none;
+    color: #f0bb17;
+}

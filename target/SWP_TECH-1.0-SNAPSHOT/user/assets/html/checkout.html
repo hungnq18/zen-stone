@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check out</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <!-- information of company -->
+        <div class="nav-info">
+          <div class="nav-info-left">
+            <ul class="nav-info-left-list">
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link">thegiodidong</a>
+              </li>
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link"
+                  >Need Help? +001 123 456 789</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-info-right">
+            <ul class="nav-info-left-list">
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link">About us</a>
+              </li>
+              <li class="nav-info-left-list-item">
+                <a href="" class="nav-info-left-list-link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- header with search -->
+        <div class="nav-with-search row m-0">
+          <div class="logo col-lg-2 col-12">
+            <img
+              src="https://wphix.com/template/dukamarket/dukamarket/assets/img/logo/logo1.svg"
+              alt=""
+            />
+          </div>
+          <div class="search col-lg-8 col-8">
+            <div class="btn-menu-mobile hide-on-laptop hide-on-tablet">
+              <i class="bx bx-menu"></i>
+            </div>
+            <form action="">
+              <div class="box-input-search">
+                <input
+                  type="text"
+                  name="key"
+                  id="search"
+                  placeholder="Search..."
+                />
+                <button class="btn btn-search">
+                  <i class="bx bx-search-alt-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="user-function col-lg-2 col-4">
+            <ul class="list-user-function">
+              <li class="user-function-item">
+                <a href="" class="user-function-item-link">
+                  <i class="bx bx-user"></i>
+                  <span>Login</span>
+                </a>
+              </li>
+              <li class="user-function-item cart">
+                <a href="" class="user-function-item-link">
+                  <i class="bx bx-shopping-bag"></i>
+                  <span>Your cart</span>
+                  <span class="number-of-cart">1</span>
+                </a>
+                <div class="view-cart-mini">
+                  <div class="header-cart-mini">
+                    <h2>Your cart</h2>
+                    <span>(2 item)</span>
+                  </div>
+                  <div class="main-mini-cart">
+                    <ul class="list-mini-cart">
+                      <li class="item-mini-cart">
+                        <img
+                          src="https://wphix.com/template/dukamarket/dukamarket/assets/img/cart/20.jpg"
+                          alt=""
+                        />
+                        <div class="content-mini-cart">
+                          <p class="item-cart-name">
+                            Samsung C49J89: £875, Debenhams Plus
+                          </p>
+                          <span class="item-cart-price">$326</span>
+                        </div>
+                      </li>
+                      <li class="item-mini-cart">
+                        <img
+                          src="https://wphix.com/template/dukamarket/dukamarket/assets/img/cart/20.jpg"
+                          alt=""
+                        />
+                        <div class="content-mini-cart">
+                          <p class="item-cart-name">
+                            Samsung C49J89: £875, Debenhams Plus
+                          </p>
+                          <span class="item-cart-price">$326</span>
+                        </div>
+                      </li>
+                      <li class="item-mini-cart">
+                        <img
+                          src="https://wphix.com/template/dukamarket/dukamarket/assets/img/cart/20.jpg"
+                          alt=""
+                        />
+                        <div class="content-mini-cart">
+                          <p class="item-cart-name">
+                            Samsung C49J89: £875, Debenhams Plus
+                          </p>
+                          <span class="item-cart-price">$326</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="total-mini-cart">
+                      <span class="total-mini-cart-title">Subtotal</span>
+                      <span class="total-mini-cart-title active">$255.00</span>
+                    </div>
+                    <div class=".active">
+                      <button class="btn btn-mini-cart active">
+                        View cart
+                      </button>
+                      <button class="btn btn-mini-cart">Checkout</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- main navigation -->
+        <div class="overlay"></div>
+        <nav class="navbar">
+          <div class="hide-on-laptop hide-on-tablet btn-close-menu">
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="list-nav">
+            <li class="nav-item">
+              <a href="../.." class="nav-item-link">Home</a>
+            </li>
+            <li class="nav-item have-dropdown">
+              <a href="./product.html" class="nav-item-link">
+                Product
+                <i class="bx bx-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu-custom">
+                <ul class="list-menu-dropdown">
+                  <li class="item-menu-dropdown">
+                    <a href="../.." class="item-menu-dropdown-link">Home</a>
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./assets/html/product.html" class="item-menu-dropdown-link">Product page</a>
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./404.html" class="item-menu-dropdown-link">404</a>           
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./itemProduct.html" class="item-menu-dropdown-link">Details product</a>                    
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./yourCart.html" class="item-menu-dropdown-link">Cart</a>
+                  </li>
+                  <li class="item-menu-dropdown">
+                    <a href="./auth.html" class="item-menu-dropdown-link">Account</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-item-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-item-link">Contact</a>
+            </li>
+          </ul>
+          <div class="box-message-free-ship">
+            <span>Spend $120 more and get free shipping!</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="wrapper-checkout row p-0">
+                <div class="col-12 col-md-6 col-lg-6 p-0 m-0">
+                    <div class="box-ordered">
+                        <h2 class="ordered-title">Your order</h2>
+                        <div class="main-ordered">
+                            <ul class="list-ordered">
+                                <li class="item-ordered">
+                                    <p class="ordered-item-title">Product</p>
+                                    <p class="ordered-item-title">Total</p>
+                                </li>
+                                <li class="item-ordered">
+                                    <p class="ordered-item-title">
+                                        Vestibulum suscipit
+                                        <span class="number-of-ordered">x2</span>
+                                    </p>
+                                    <p class="ordered-item-title">$165.00</p>
+                                </li>
+                                <li class="item-ordered">
+                                    <p class="ordered-item-title">
+                                        Vestibulum dictum magna 
+                                        <span class="number-of-ordered">x2</span>
+                                    </p>
+                                    <p class="ordered-item-title">$165.00</p>
+                                </li>
+                                <li class="item-ordered">
+                                    <p class="ordered-item-title">
+                                        Order total
+                                    </p>
+                                    <p class="ordered-item-title black-bold">$165.00</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 p-0 m-0">
+                    <div class="box-info-ordered">
+                        <h2 class="ordered-title">Billing Details</h2>
+                        <div class="main-info-ordered"> 
+                            <form action="" class="row m-0 p-0">
+                                <div class="form-group-ordered col-12 col-md-6 col-lg-6">
+                                    <label for="#fullname">
+                                        Full name: 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="full-name" type="text" placeholder="Full name" required>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-6 col-lg-6">
+                                    <label for="#email">
+                                        Email: 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="email" type="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-6 col-lg-6">
+                                    <label for="#phone">
+                                        Phone number: 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="phone" type="text" placeholder="Phone number" required>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-6 col-lg-6">
+                                    <label for="#province">
+                                        Province / city:  
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="province" id="province">
+                                        <option value="">Choose  a province</option>
+                                        <option value="">Choose  a province</option>
+                                        <option value="">Choose  a province</option>
+                                    </select>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-6 col-lg-6">
+                                    <label for="#district">
+                                       District:  
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="district" id="district">
+                                        <option value="">Choose  a district</option>
+                                        <option value="">Choose  a district</option>
+                                        <option value="">Choose  a district</option>
+                                    </select>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-6 col-lg-6">
+                                    <label for="#ward">
+                                        Ward: 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <select name="ward" id="ward">
+                                        <option value="">Choose  a ward</option>
+                                        <option value="">Choose  a ward</option>
+                                        <option value="">Choose  a ward</option>
+                                    </select>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-12 col-lg-12">
+                                    <label for="#details-address">
+                                        Details address: 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="details-address" type="text" placeholder="Details address" required>
+                                </div>
+                                <div class="form-group-ordered col-12 col-md-12 col-lg-12">
+                                    <label for="#method-payment">
+                                        Method payment: 
+                                        <span class="required">*</span>
+                                    </label>
+                                    <div class="box-choose">
+                                        <div class="group-pay">
+                                            <input checked name="method-payment" id="cash-payment" type="radio" required>
+                                            <label for="cash-payment">Cash</label>
+                                        </div>
+                                        <div class="desc-cash-method active">
+                                            <p>
+                                                If you choose the COD payment method, in addition to the shipping fee, there will be an additional COD fee from the shipping service provider, so the fee when choosing this method will be more expensive.
+                                            </p>
+                                        </div>
+                                        <div class="group-pay">
+                                            <input name="method-payment" id="credit-payment" type="radio" required>
+                                            <label for="credit-payment">Credit</label>
+                                        </div>
+                                        <div class="desc-credit-method">
+                                            <p>Please note that you will only transfer money after receiving a phone call confirming your order from the website</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-btn-ordered">
+                                    <button class="btn-submit-ordered">Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <section class="connectpp">
+        <div class="section-contect">
+            <div class="container">
+            <div class="row m-0 p-0">
+                <div class="followst col-12 col-lg-4">
+                    <h5>Follow us</h5>
+                    <p class="followft-p">
+                        We make consolidating, marketing and tracking your social media website easy.
+                    </p>
+                    <div class="mb-4">
+                        <!-- Facebook -->
+                        <a class="contact-social facebook" href="#">
+                        <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a class="contact-social twitter" href="#">
+                        <i class='bx bxl-twitter' ></i>
+                        </a>
+                        <a class="contact-social youtube" href="#">
+                        <i class='bx bxl-youtube' ></i>
+                        </a>
+                        <a class="contact-social linkedin" href="#">
+                        <i class='bx bxl-linkedin' ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="followst col-12 col-lg-4">
+                    <h5>Follow us</h5>
+                    <p class="followft-p">
+                        We make consolidating, marketing and tracking your social media website easy.
+                    </p>
+                    <div class="boxst">
+                        <form action="" class="form-section">
+                        <div class="box-input-search section-box">
+                            <input type="text" name="key" id="search" placeholder="Enter your email" />
+                            <button class="btn btn-search">
+                            SUBSCRIBE
+                            </button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="followst col-12 col-lg-4">
+                    <h5>Follow us</h5>
+                    <p class="followft-p">
+                        DukaMarket App is now available on App Store & Google Play. Get it now.
+                    </p>
+                    <div class="boxst subboxst">
+                        <img src="https://wphix.com/template/dukamarket/dukamarket/assets/img/brand/app_ios.png" alt="">
+                        <img src="https://wphix.com/template/dukamarket/dukamarket/assets/img/brand/app_android.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer-about">
+        <div class="container">
+            <div class="row m-0 p-0">
+            <div class="customer col-12 col-lg-4">
+                <h5>customer Care</h5>
+                <div class="sub-customer">
+                    <ul>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="customer col-12 col-lg-4">
+                <h5>customer Care</h5>
+                <div class="sub-customer">
+                    <ul>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                        <li><a href="">New Customer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="customer navcustomer col-12 col-lg-4">
+                <h5>customer Care</h5>
+                <div class="sub-customer">
+                    <p>Our mission statement is to provide the absolute best customer experience available in the
+                        Electronic industry without exception.</p>
+                    <div class="navcustomer-img">
+                        <i class='bx bxs-phone'></i>
+                        <ul>
+                            <li><a href="">Got Question? Call us 24/7!</a></li>
+                            <li><a style="color: yellow;font-size: 2.1rem;" href="">0939316934</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="aboutUS">
+        <div class="navaboutus">
+            <p>Copyright © DukaMarket. All Rights Reserved. Powered by Theme_Pure.Copyright</p>
+        </div>
+    </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        const cashPay = document.querySelector("#cash-payment"),
+            creditPay = document.querySelector("#credit-payment"),
+            cashDesc = document.querySelector(".desc-cash-method"),
+            creditDesc = document.querySelector(".desc-credit-method");
+        cashPay.addEventListener("click", ()=> {
+            cashDesc.classList.add("active");
+            creditDesc.classList.remove("active");
+        })
+        creditPay.addEventListener("click", ()=> {
+            cashDesc.classList.remove("active");
+            creditDesc.classList.add("active");
+        })
+    </script>
+</body>
+</html>

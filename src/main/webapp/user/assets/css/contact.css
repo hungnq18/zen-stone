@@ -1,0 +1,95 @@
+.page-banner-header {
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+}
+
+.box-content-banner {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-content-banner h1 {
+    font-size: 6rem;
+}
+
+.main-content-contact {
+    margin: 30px 0px;
+}
+
+.main-content-contact h2,
+.box-send-message h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 10px;
+}
+.list-contact {
+    list-style: none;
+    padding: 5px 20px;
+}
+
+.maps {
+    padding: 5px 20px;
+}
+
+.item-contact {
+    display: flex;
+    font-size: 1.6rem;
+    padding: 4px 0px;
+}
+
+.contact-title {
+    display: block;
+    width: 100px;
+    font-weight: 500;
+}
+
+.contact-content {
+    font-style: italic;
+}
+
+.display-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* contact */
+.wrapper-box-form {
+    padding: 0px 20px;
+}
+
+.box-send-message input {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.box-send-message textarea {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.box-send-message label {
+    font-size: 1.4rem;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* form */
+
+.btn.btn-primary.btn-send-contact {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #fcbe00;
+    border: none;
+}

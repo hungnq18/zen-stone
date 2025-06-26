@@ -1,0 +1,27 @@
+.slick-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    z-index: 9999;
+    opacity: 0;
+    transition: var(--transition-text);
+    border: none;
+    font-size: 1.6rem;
+}
+.slick-arrow:hover {
+    background-color: #fcbe00;
+    color: #222;
+}
+.products:hover .slick-arrow{
+    opacity: 1;
+}
+.slick-prev.slick-arrow {
+    left: -25px;
+}
+.slick-next.slick-arrow {
+    right: -25px;
+}

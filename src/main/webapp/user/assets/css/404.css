@@ -1,0 +1,42 @@
+.wrapper-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-status {
+    margin-top: 30px;
+}
+.img-status img {
+    width: 100%;
+}
+.box-content-status {
+    margin-top: 20px;
+    text-align: center;
+}
+.box-content-status h1 {
+    font-size: 4rem;
+}
+.message-status {
+    font-size: 1.7rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+.back-to-page {
+    display: inline-block;
+    padding:  10px 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    background-color: #fcbe00;
+    color: #222;
+}
+
+.back-to-page:hover {
+    border-color: #fcbe00;
+    background-color: #fff;
+}

@@ -1,0 +1,191 @@
+/*  section box */
+.connectpp {
+    background-color: #2f3037;
+    padding-top: 55px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.connectpp .section-contect {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.connectpp .section-contect h5,
+.footer-about .customer h5 {
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-left: 5px;
+}
+.connectpp .section-contect .followst {
+    padding: 0px 20px;
+}
+
+.connectpp .section-contect p.followft-p {
+    font-size: 1.6rem;
+    margin-left: 5px;
+    color: #999;
+}
+.connectpp .section-contect .contact-social:nth-child(1) {
+    margin-left: 0px;
+}
+.connectpp .section-contect .contact-social {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.connectpp .section-contect .contact-social i{
+    padding: 10px;
+    font-size: 3rem;
+    border-radius: 2px;
+    transition: all 0.2s linear;
+}
+.connectpp .section-contect .contact-social.facebook i{
+    color: #fff;
+    background-color: #3b5998;
+}
+.connectpp .section-contect .contact-social.twitter i{
+    color: #fff;
+    background-color: #1da1f2;
+}
+.connectpp .section-contect .contact-social.youtube i{
+    color: #fff;
+    background-color: #cd201f;
+}
+.connectpp .section-contect .contact-social.linkedin i{
+    color: #fff;
+    background-color: #0077b5;
+}
+.connectpp .section-contect .contact-social i:hover {
+    background-color: #fcbe00;
+    color: #222;
+}
+.connectpp .section-contect .followst .boxst {
+    font-size: 6em;
+    color: white;
+    line-height: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.connectpp .section-contect .followst .boxst a {
+    margin: 0;
+    display: block;
+    margin: 0px -2px;
+}
+
+.connectpp .section-contect .followst .boxst a i {
+    padding: 0px;
+}
+
+.connectpp .section-contect .followst .form-section {
+    width: 100%;
+}
+
+.connectpp .section-contect .followst .section-box {
+    margin-left: 0px;
+    padding: 0;
+}
+
+.connectpp .section-contect .followst .section-box input {
+    height: 40px;
+}
+
+.connectpp .section-contect h5, .footer-about .customer h5,
+.connectpp .section-contect p.followft-p {
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.connectpp .section-contect .followst .boxst img {
+    width: 40%;
+    gap: 10px;
+    margin-left: 5px;
+}
+
+.connectpp .section-contect .followst .boxst.subboxst {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-about {
+    background-color: #222;
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+
+.footer-about .customer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-about .customer .sub-customer ul {
+    list-style-type: none;
+    margin-top: 18px;
+    padding: 5px;
+}
+.sub-customer .introduce-company {
+    line-height: 2rem;
+    max-height: 15rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+.footer-about .customer .sub-customer ul li {
+    margin-bottom: 8px;
+}
+.footer-about .customer .sub-customer ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.footer-about .customer.navcustomer {
+    /* width: 25%; */
+}
+
+.footer-about .customer.navcustomer .sub-customer p {
+    color: #666;
+    font-size: 1.6em;
+    margin-top: 20px;
+}
+
+.footer-about .customer.navcustomer .navcustomer-img {
+    display: flex;
+}
+
+.footer-about .customer.navcustomer .navcustomer-img .a-phone-img {
+    color: yellow;
+}
+
+
+.footer-about .customer.navcustomer .navcustomer-img i.bx.bxs-phone {
+    color: yellow;
+    font-size: 60px;
+    margin: auto 0;
+}
+
+.aboutUS {
+    background-color: #222;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    padding-bottom: 20px;
+
+
+}
+
+.aboutUS .navaboutus {
+    border-top: 1px solid white;
+    margin: 0 50px;
+}
+
+.aboutUS .navaboutus p {
+    padding-top: 30px;
+}

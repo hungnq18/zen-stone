@@ -1,0 +1,33 @@
+.pagination,
+.pagination nav{
+    width: 100%;
+}
+.pagination nav{
+    margin-top: 15px;
+}
+.pagination-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+.pagination-item.active .pagination-link,
+.pagination-link:hover {
+    background-color: #fcbe00;
+    color: #fff;
+    border-color: #fcbe00;
+}
+.pagination-link {
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    font-size: 1.4rem;
+    color: #222;
+    border: 1px solid #e5e5e5;
+    display: block;
+    text-decoration: none;
+}
+    
