@@ -14,11 +14,11 @@ public class DBConnection {
         try { 
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             
-            // Thông tin Azure SQL
-            String dbHost = System.getenv("DB_HOST");
-            String dbName = System.getenv("DB_NAME");
-            String dbUser = System.getenv("DB_USER");
-            String dbPassword = System.getenv("DB_PASSWORD");
+            // Thông tin Azure SQL fix cứng
+            String dbHost = "zenstone.database.windows.net";
+            String dbName = "zen-stone";
+            String dbUser = "adminuser"; // Thay bằng username thực tế
+            String dbPassword = "Hung18102003";    // Thay bằng password thực tế
 
             String urlConnect = String.format(
                 "jdbc:sqlserver://%s:1433;database=%s;user=%s;password=%s;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;",

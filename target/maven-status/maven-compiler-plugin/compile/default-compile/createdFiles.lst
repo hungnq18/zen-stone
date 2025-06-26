@@ -53,6 +53,7 @@ PayOS\CreatePaymentServlet.class
 Controllers\Admin\BannerWithText.class
 Controllers\User\HelpUserController.class
 DAO\CategoryDao.class
+BotAI\ChatBotServlet.class
 Controllers\User\OrderStatusController.class
 Controllers\Admin\BillController.class
 Controllers\User\ErrorUserController.class
@@ -70,7 +71,6 @@ Model\Comment.class
 Controllers\User\AboutUserController.class
 Util\ClearHTML.class
 Controllers\User\CategoryUserController.class
-servlet\BillDetail.class
 Util\Email$2.class
 Controllers\User\FilterUserController.class
 Controllers\User\AddressUserController.class
@@ -85,6 +85,7 @@ Controllers\User\CheckoutController.class
 Controllers\User\OrderUserController.class
 Util\Upload.class
 DBConnection\DBConnection.class
+Util\RunSqlScript.class
 Controllers\Admin\AccountController.class
 Controllers\Admin\FilterStatusController.class
 Util\Email$1.class

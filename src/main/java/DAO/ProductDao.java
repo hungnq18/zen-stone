@@ -22,8 +22,15 @@ public class ProductDao {
     public ProductDao() {
         try {
             conn = DBConnection.connect();
+            if (conn == null) {
+                System.out.println("[ERROR] ProductDao: DBConnection.connect() trả về null. Không thể kết nối database!");
+            } else {
+                System.out.println("[INFO] ProductDao: Kết nối database thành công.");
+            }
         } catch (Exception e) {
             conn = null;
+            System.out.println("[ERROR] ProductDao: Lỗi khi kết nối database!");
+            e.printStackTrace();
         }
     }
 //  user
