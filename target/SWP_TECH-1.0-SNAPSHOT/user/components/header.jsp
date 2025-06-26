@@ -22,29 +22,32 @@
     
     <div class="container">
         <!-- information of company -->
-        <div class="nav-info">
-            <div class="nav-info-left">
-                <ul class="nav-info-left-list">
-                    <li class="nav-info-left-list-item">
-                        <a href="/about" class="nav-info-left-list-link">${companyBean.top1CompanyActive.name}</a>
-                    </li>
-                    <li class="nav-info-left-list-item">
-                        <a href="tel:${companyBean.top1CompanyActive.phone}" class="nav-info-left-list-link"
-                           >Need Help? ${companyBean.top1CompanyActive.phone}</a>
-                    </li>
-                </ul>
+        <c:set var="topCompany" value="${companyBean.top1CompanyActive}" />
+        <c:if test="${topCompany != null}">
+            <div class="nav-info">
+                <div class="nav-info-left">
+                    <ul class="nav-info-left-list">
+                        <li class="nav-info-left-list-item">
+                            <a href="/about" class="nav-info-left-list-link">${topCompany.name}</a>
+                        </li>
+                        <li class="nav-info-left-list-item">
+                            <a href="tel:${topCompany.phone}" class="nav-info-left-list-link"
+                               >Need Help? ${topCompany.phone}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-info-right">
+                    <ul class="nav-info-left-list">
+                        <li class="nav-info-left-list-item">
+                            <a href="/about" class="nav-info-left-list-link">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-info-left-list-item">
+                            <a href="/contact" class="nav-info-left-list-link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-info-right">
-                <ul class="nav-info-left-list">
-                    <li class="nav-info-left-list-item">
-                        <a href="/about" class="nav-info-left-list-link">Về chúng tôi</a>
-                    </li>
-                    <li class="nav-info-left-list-item">
-                        <a href="/contact" class="nav-info-left-list-link">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        </c:if>
          <!--header with search--> 
         <div class="nav-with-search row m-0">
             <div class="logo col-lg-2 col-12">
