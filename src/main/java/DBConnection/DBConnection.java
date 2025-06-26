@@ -15,9 +15,9 @@ public class DBConnection {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             
             // Thông tin Azure SQL fix cứng
-            String dbHost = "zenstone.database.windows.net";
+            String dbHost = "zen-stone.database.windows.net";
             String dbName = "zen-stone";
-            String dbUser = "adminuser"; // Thay bằng username thực tế
+            String dbUser = "adminuser@zenstone"; // Thay bằng username thực tế
             String dbPassword = "Hung18102003";    // Thay bằng password thực tế
 
             String urlConnect = String.format(
