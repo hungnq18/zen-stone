@@ -1,4 +1,3 @@
-
 package BotAI;
 
 import java.io.BufferedReader;
@@ -94,9 +93,9 @@ public class ChatBotServlet extends HttpServlet {
                         .getAsJsonArray("parts").get(0)
                         .getAsJsonObject().get("text").getAsString().trim();
 
-                    response.getWriter().write(
-                        "{\"reply\":\"" + botReply.replace("\"","\\\"") + "\"}"
-                    );
+                    JsonObject replyJson = new JsonObject();
+                    replyJson.addProperty("reply", botReply);
+                    response.getWriter().write(replyJson.toString());
                 }
             } else {
                 try (BufferedReader err = new BufferedReader(

@@ -71,7 +71,7 @@
 
         <div class="chat-popup" id="chatPopup">
             <div class="chat-box">
-                <h2>Chat với AI</h2>
+                <h2>ZenStone</h2>
                 <div id="messages" class="messages" style="min-height: 200px; padding: 0.5rem; background: #f0f0f0; border-radius: 4px; overflow-y: auto; max-height: 400px; margin-bottom: 1rem;"></div>
                 <div class="input-box" style="display: flex; gap: 0.5rem;">
                     <input type="text" id="userMessage" placeholder="Nhập tin nhắn..." onkeydown="if (event.key === 'Enter') {

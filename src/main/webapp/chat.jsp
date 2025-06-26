@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chat với AI</title>
+    <title>ZenStone</title>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
         .chat-box { max-width: 600px; margin: 0 auto; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,.1); }
