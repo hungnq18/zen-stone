@@ -14,14 +14,16 @@ public class DBConnection {
         try { 
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             
-            // Read from Java System Properties, with fallbacks for local development
-            String dbHost = System.getProperty("db.host", "localhost");
-            String dbName = System.getProperty("db.name", "swp_tech");
-            String dbUser = System.getProperty("db.user", "hungnq18");
-            String dbPassword = System.getProperty("db.password", "123");
+            // Thông tin Azure SQL
+            String dbHost = System.getenv("DB_HOST");
+            String dbName = System.getenv("DB_NAME");
+            String dbUser = System.getenv("DB_USER");
+            String dbPassword = System.getenv("DB_PASSWORD");
 
-            String urlConnect = String.format("jdbc:sqlserver://%s:1433;databasename=%s;user=%s;password=%s;characterEncoding=UTF-8;encrypt=true;trustServerCertificate=true;",
-                                              dbHost, dbName, dbUser, dbPassword);
+            String urlConnect = String.format(
+                "jdbc:sqlserver://%s:1433;database=%s;user=%s;password=%s;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;",
+                dbHost, dbName, dbUser, dbPassword
+            );
 
             // tao doi tuong connection 
             Connection conn = DriverManager.getConnection(urlConnect);

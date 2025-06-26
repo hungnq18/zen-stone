@@ -7,7 +7,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Create the final image with Tomcat
-FROM tomcat:10.1-jdk11-temurin
+FROM tomcat:9.0-jdk17
 # Remove the default ROOT webapp
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Copy the built WAR file from the build stage to Tomcat's webapps directory
