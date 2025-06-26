@@ -7,7 +7,7 @@
     <servlet>
         <servlet-name>HomeController</servlet-name>
         <servlet-class>Controllers.Admin.HomeController</servlet-class>
-    </servlet>
+    </servle
     <servlet>
         <servlet-name>BillController</servlet-name>
         <servlet-class>Controllers.Admin.BillController</servlet-class>
@@ -230,7 +230,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HomeUserController</servlet-name>
-        <url-pattern>/home</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
