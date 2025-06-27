@@ -5,18 +5,18 @@
     <!DOCTYPE html>
     <html lang="en">
         <head>
-            <base href="http://localhost:8080/" />
-            <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
+            <!--<base href="http://localhost:8080/" />-->
+            <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-            <link rel="stylesheet" href="./user/assets/css/style.css" />
-            <link rel="stylesheet" href="./user/assets/css/base.css" />
-            <link rel="stylesheet" href="./user/assets/css/footer.css">
-            <link rel="stylesheet" href="./user/assets/css/slick.css" />
-            <link rel="stylesheet" href="./user/assets/css/slick-theme.css" />
-            <link rel="stylesheet" href="./user/assets/css/responsive.css" />
+            <link rel="stylesheet" href="/user/assets/css/style.css" />
+            <link rel="stylesheet" href="/user/assets/css/base.css" />
+            <link rel="stylesheet" href="/user/assets/css/footer.css">
+            <link rel="stylesheet" href="/user/assets/css/slick.css" />
+            <link rel="stylesheet" href="/user/assets/css/slick-theme.css" />
+            <link rel="stylesheet" href="/user/assets/css/responsive.css" />
             <title>Home</title>
             <style>
                 .chat-popup {
@@ -435,9 +435,9 @@
         <%@include file="user/components/footer.jsp" %>
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous" ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./user/assets/js/app.js"></script>
-        <script type="text/javascript" src="./user/assets/js/slick.js"></script>
-        <script src="./user/assets/js/countDown.js"></script>
+        <script src="/user/assets/js/app.js"></script>
+        <script type="text/javascript" src="/user/assets/js/slick.js"></script>
+        <script src="/user/assets/js/countDown.js"></script>
         <script>
                                                 $(document).ready(function () {
                                                     $(".products").slick({
