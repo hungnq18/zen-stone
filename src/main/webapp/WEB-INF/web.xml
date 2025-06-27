@@ -71,6 +71,7 @@
     <servlet>
         <servlet-name>HomeUserController</servlet-name>
         <servlet-class>Controllers.User.HomeUserController</servlet-class>
+            <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
         <servlet-name>ProductUserController</servlet-name>
