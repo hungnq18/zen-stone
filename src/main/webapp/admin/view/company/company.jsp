@@ -154,7 +154,7 @@
             </div>
         </div>
     </section>
-    <script src="./admin/assets/js/validation.js"></script>
+    <script src="/admin/assets/js/validation.js"></script>
     <script src="./admin/ckeditor/ckeditor.js"></script> 
     <script>
                                                 CKEDITOR.replace('ck-editor1');

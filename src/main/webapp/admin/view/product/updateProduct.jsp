@@ -158,7 +158,7 @@
                                     CKEDITOR.replace('ck-editor1');
                                     CKEDITOR.replace('ck-editor2');
     </script>
-    <script src="./admin/assets/js/validation.js"></script>
+    <script src="/admin/assets/js/validation.js"></script>
     <script>
                                     // validation form
                                     const name = document.getElementById('name'),

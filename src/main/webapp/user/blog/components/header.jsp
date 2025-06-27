@@ -1,27 +1,26 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>ZENSTONE</title>
-        <base href="http://localhost:8080/" />
+        <!-- <base href="http://localhost:8080/" /> -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./user/blog/css/open-iconic-bootstrap.min.css">
-        <link rel="stylesheet" href="./user/blog/css/animate.css">
-        <link rel="stylesheet" href="./user/blog/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="./user/blog/css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="./user/blog/css/magnific-popup.css">
-        <link rel="stylesheet" href="./user/blog/css/aos.css">
-        <link rel="stylesheet" href="./user/blog/css/ionicons.min.css">
-        <link rel="stylesheet" href="./user/blog/css/bootstrap-datepicker.css">
-        <link rel="stylesheet" href="./user/blog/css/jquery.timepicker.css">
-        <link rel="stylesheet" href="./user/blog/css/flaticon.css">
-        <link rel="stylesheet" href="./user/blog/css/icomoon.css">
-        <link rel="stylesheet" href="./user/blog/css/style.css">
+        <link rel="stylesheet" href="/user/blog/css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="/user/blog/css/animate.css">
+        <link rel="stylesheet" href="/user/blog/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="/user/blog/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="/user/blog/css/magnific-popup.css">
+        <link rel="stylesheet" href="/user/blog/css/aos.css">
+        <link rel="stylesheet" href="/user/blog/css/ionicons.min.css">
+        <link rel="stylesheet" href="/user/blog/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="/user/blog/css/jquery.timepicker.css">
+        <link rel="stylesheet" href="/user/blog/css/flaticon.css">
+        <link rel="stylesheet" href="/user/blog/css/icomoon.css">
+        <link rel="stylesheet" href="/user/blog/css/style.css">
     </head>
     <body class="goto-here">
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">

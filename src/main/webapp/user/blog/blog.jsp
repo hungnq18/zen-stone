@@ -1,11 +1,10 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@include file="./components/header.jsp" %>
 <!-- END nav -->
 <div class="hero-wrap hero-bread" 
      style="
-     background-image: url('../img/banner.jpg');
+     background-image: url('/user/assets/img/banner.jpg');
      background-size: cover;
      background-position: center center;
      ">

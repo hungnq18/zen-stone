@@ -9,19 +9,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <base href="http://localhost:8080/" />
-        <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Forget password</title>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./user/assets/css/style.css" />
-        <link rel="stylesheet" href="./user/assets/css/base.css" />
-        <link rel="stylesheet" href="./user/assets/css/footer.css">
-        <link rel="stylesheet" href="./user/assets/css/account.css">
-        <link rel="stylesheet" href="./user/assets/css/form.css">
-        <link rel="stylesheet" href="./user/assets/css/toast.css">
-        <link rel="stylesheet" href="./user/assets/css/responsive.css" />
+        <link rel="stylesheet" href="/user/assets/css/style.css" />
+        <link rel="stylesheet" href="/user/assets/css/base.css" />
+        <link rel="stylesheet" href="/user/assets/css/footer.css">
+        <link rel="stylesheet" href="/user/assets/css/account.css">
+        <link rel="stylesheet" href="/user/assets/css/form.css">
+        <link rel="stylesheet" href="/user/assets/css/toast.css">
+        <link rel="stylesheet" href="/user/assets/css/responsive.css" />
     </head>
     <body>
         <%@include file="components/header.jsp" %>
@@ -71,16 +70,16 @@
         <%@include file="components/footer.jsp" %>
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./user/assets/js/app.js"></script>
-        <script src="./user/assets/js/validator.js"></script>
-        <script src="./user/assets/js/toast.js"></script>
+        <script src="/user/assets/js/app.js"></script>
+        <script src="/user/assets/js/validator.js"></script>
+        <script src="/user/assets/js/toast.js"></script>
+        <c:if test="${forgetPasswordMessage != null}">
+            <script>showError("${forgetPasswordMessage}");</script>
+        </c:if>
+        <c:if test="${resetPasswordSuccess != null}">
+            <script>showSuccess("${resetPasswordSuccess}");</script>
+        </c:if>
         <script>
-            <c:if test="${forgetPasswordMessage != null}">
-            showError("${forgetPasswordMessage}");
-            </c:if>
-            <c:if test="${resetPasswordSuccess != null}">
-            showSuccess("${resetPasswordSuccess}");
-            </c:if>
             const username = document.getElementById('username'),
                     email = document.getElementById('email');
             const messageUsername = "Username must be form 6 to 100 character",

@@ -152,8 +152,8 @@
         </div>
         </div>
     </section>
-    <script src="./admin/assets/js/validation.js"></script>
-    <<script >
+    <script src="/admin/assets/js/validation.js"></script>
+    <script >
                                             const image = document.getElementById('image'),
                                                     title = document.getElementById('text-title'),
                                                     content = document.getElementById('text-content');

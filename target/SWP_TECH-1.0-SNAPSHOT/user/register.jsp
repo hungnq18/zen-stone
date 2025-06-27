@@ -4,19 +4,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <base href="http://localhost:8080/" />
-        <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Register</title>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./user/assets/css/style.css" />
-        <link rel="stylesheet" href="./user/assets/css/base.css" />
-        <link rel="stylesheet" href="./user/assets/css/footer.css">
-        <link rel="stylesheet" href="./user/assets/css/account.css">
-        <link rel="stylesheet" href="./user/assets/css/form.css">
-        <link rel="stylesheet" href="./user/assets/css/toast.css">
-        <link rel="stylesheet" href="./user/assets/css/responsive.css" />
+        <link rel="stylesheet" href="/user/assets/css/style.css" />
+        <link rel="stylesheet" href="/user/assets/css/base.css" />
+        <link rel="stylesheet" href="/user/assets/css/footer.css">
+        <link rel="stylesheet" href="/user/assets/css/account.css">
+        <link rel="stylesheet" href="/user/assets/css/form.css">
+        <link rel="stylesheet" href="/user/assets/css/toast.css">
+        <link rel="stylesheet" href="/user/assets/css/responsive.css" />
         
                 <!-- Google Sign-In API -->
         <script src="https://accounts.google.com/gsi/client" async defer></script>
@@ -88,9 +87,9 @@
             crossorigin="anonymous"
         ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./user/assets/js/app.js"></script>
-        <script src="./user/assets/js/toast.js"></script>
-        <script src="./user/assets/js/validator.js"></script>
+        <script src="/user/assets/js/app.js"></script>
+        <script src="/user/assets/js/toast.js"></script>
+        <script src="/user/assets/js/validator.js"></script>
          <!-- Google Login JS -->
         <script>
             function handleCredentialResponse(response) {

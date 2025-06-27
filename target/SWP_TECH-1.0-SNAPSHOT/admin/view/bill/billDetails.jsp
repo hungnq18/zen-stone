@@ -93,7 +93,7 @@
         <div class="bill-header">
             <div class="bill-header-company">
                 <div class="bill-header-logo">
-                    <img src="./uploads/base/logo.png" alt="logo">
+                    <img src="/uploads/base/logo.png" alt="logo">
                     <span class="bill-header-name">Group 2</span>
                 </div>
             </div>

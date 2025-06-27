@@ -4,21 +4,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <base href="http://localhost:8080/" />
-        <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Login</title>
 
         <!-- External CSS -->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./user/assets/css/style.css" />
-        <link rel="stylesheet" href="./user/assets/css/base.css" />
-        <link rel="stylesheet" href="./user/assets/css/footer.css">
-        <link rel="stylesheet" href="./user/assets/css/account.css">
-        <link rel="stylesheet" href="./user/assets/css/form.css">
-        <link rel="stylesheet" href="./user/assets/css/toast.css">
-        <link rel="stylesheet" href="./user/assets/css/responsive.css" />
+        <link rel="stylesheet" href="/user/assets/css/style.css" />
+        <link rel="stylesheet" href="/user/assets/css/base.css" />
+        <link rel="stylesheet" href="/user/assets/css/footer.css">
+        <link rel="stylesheet" href="/user/assets/css/account.css">
+        <link rel="stylesheet" href="/user/assets/css/form.css">
+        <link rel="stylesheet" href="/user/assets/css/toast.css">
+        <link rel="stylesheet" href="/user/assets/css/responsive.css" />
 
         <!-- Google Sign-In API -->
         <script src="https://accounts.google.com/gsi/client" async defer></script>
@@ -85,20 +84,17 @@
                 integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
         crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./user/assets/js/app.js"></script>
-        <script src="./user/assets/js/validator.js"></script>
-        <script src="./user/assets/js/toast.js"></script>
+        <script src="/user/assets/js/app.js"></script>
+        <script src="/user/assets/js/validator.js"></script>
+        <script src="/user/assets/js/toast.js"></script>
 
         <!-- JSTL Toast Messages -->
-        <script>
-            <%-- JSTL-like logic --%>
-            <c:if test="${messageSuccessRegister != null}">
-            showSuccess("${messageSuccessRegister}");
-            </c:if>
-            <c:if test="${messageUserAuth != null}">
-            showError("${messageUserAuth}");
-            </c:if>
-        </script>
+        <c:if test="${messageSuccessRegister != null}">
+            <script>showSuccess("${messageSuccessRegister}");</script>
+        </c:if>
+        <c:if test="${messageUserAuth != null}">
+            <script>showError("${messageUserAuth}");</script>
+        </c:if>
 
         <!-- Google Login JS -->
         <script>

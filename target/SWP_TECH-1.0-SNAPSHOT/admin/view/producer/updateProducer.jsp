@@ -53,7 +53,7 @@
                 </div>
             </div>
         </section>
-        <script src="./admin/assets/js/validation.js"></script>
+        <script src="/admin/assets/js/validation.js"></script>
         <script >
             const name = document.getElementById('name');
             const nameMessage = "This field can not empty";

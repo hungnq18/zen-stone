@@ -5,7 +5,6 @@
     <!DOCTYPE html>
     <html lang="en">
         <head>
-            <!--<base href="http://localhost:8080/" />-->
             <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />

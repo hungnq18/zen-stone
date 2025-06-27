@@ -8,21 +8,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <base href="http://localhost:8080/" />
-        <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>${category.name}</title>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./user/assets/css/style.css" />
-        <link rel="stylesheet" href="./user/assets/css/slick.css" />
-        <link rel="stylesheet" href="./user/assets/css/slick-theme.css" />
-        <link rel="stylesheet" href="./user/assets/css/base.css" />
-        <link rel="stylesheet" href="./user/assets/css/product.css">
-        <link rel="stylesheet" href="./user/assets/css/footer.css">
-        <link rel="stylesheet" href="./user/assets/css/sliderRange.css">
-        <link rel="stylesheet" href="./user/assets/css/pagination.css">
-        <link rel="stylesheet" href="./user/assets/css/responsive.css" />
+        <link rel="stylesheet" href="/user/assets/css/style.css" />
+        <link rel="stylesheet" href="/user/assets/css/slick.css" />
+        <link rel="stylesheet" href="/user/assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="/user/assets/css/base.css" />
+        <link rel="stylesheet" href="/user/assets/css/product.css">
+        <link rel="stylesheet" href="/user/assets/css/footer.css">
+        <link rel="stylesheet" href="/user/assets/css/sliderRange.css">
+        <link rel="stylesheet" href="/user/assets/css/pagination.css">
+        <link rel="stylesheet" href="/user/assets/css/responsive.css" />
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     </head>
     <body>
@@ -119,9 +118,9 @@
                                         </c:forEach>
                                     </c:if>
                                     <c:if test="${products.size() == 0}">
-                                        <div class="box-no-found">"
-                                            <img src="./uploads/base/no-product-found.png" alt="Not found">"
-                                            <p class="text">Sorry, This category no have product</p>"
+                                        <div class="box-no-found">
+                                            <img src="/uploads/base/no-product-found.png" alt="Not found">
+                                            <p class="text">Sorry, This category no have product</p>
                                         </div>
                                     </c:if>
                                 </div>
@@ -136,9 +135,9 @@
         </main>
         <%@include file="components/footer.jsp" %>
         <script src="https://code.jquery.com/jquery-3.7.0.js" ></script>
-        <script src="./user/assets/js/filter.js"></script>
+        <script src="/user/assets/js/filter.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./user/assets/js/app.js"></script>
-        <script type="text/javascript" src="./user/assets/js/sliderRange.js"></script>
+        <script src="/user/assets/js/app.js"></script>
+        <script type="text/javascript" src="/user/assets/js/sliderRange.js"></script>
     </body>
 </html>

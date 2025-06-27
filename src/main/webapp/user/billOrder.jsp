@@ -130,7 +130,7 @@
             <div class="bill-header">
                 <div class="bill-header-company">
                     <div class="bill-header-logo">
-                        <img src="${pageContext.request.contextPath}/user/assets/img/zen_logo.png" alt="logo"></img>
+                        <img src="/user/assets/img/zen_logo.png" alt="logo"></img>
                         <!--<span class="bill-header-name">ZENSTONE</span>-->
                     </div>
                 </div>

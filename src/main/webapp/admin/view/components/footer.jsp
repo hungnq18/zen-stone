@@ -17,14 +17,14 @@
 </section>
 <!--main content end-->
 </section>
-<script src="./admin/assets/js/bootstrap.js"></script>
-<script src="./admin/assets/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="./admin/assets/js/scripts.js"></script>
-<script src="./admin/assets/js/jquery.slimscroll.js"></script>
-<script src="./admin/assets/js/jquery.nicescroll.js"></script>
-<script src="./admin/assets/js/jquery.scrollTo.js"></script>
-<script src="./admin/assets/js/toast.js"></script>
-<script src="./admin/assets/js/app.js"></script> 
+<script src="/admin/assets/js/bootstrap.js"></script>
+<script src="/admin/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/admin/assets/js/scripts.js"></script>
+<script src="/admin/assets/js/jquery.slimscroll.js"></script>
+<script src="/admin/assets/js/jquery.nicescroll.js"></script>
+<script src="/admin/assets/js/jquery.scrollTo.js"></script>
+<script src="/admin/assets/js/toast.js"></script>
+<script src="/admin/assets/js/app.js"></script> 
 <c:set value="${param.status}" var="status" ></c:set>
 <c:set value="${param.message}" var="message" ></c:set>
 <c:if test="${status == 1}">

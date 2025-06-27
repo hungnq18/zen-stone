@@ -8,22 +8,21 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <base href="http://localhost:8080/" />
-        <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>${product.name}</title>
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />  
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./user/assets/css/style.css" />
-        <link rel="stylesheet" href="./user/assets/css/slick.css" />
-        <link rel="stylesheet" href="./user/assets/css/slick-theme.css" />
-        <link rel="stylesheet" href="./user/assets/css/base.css" />
-        <link rel="stylesheet" href="./user/assets/css/inputNumber.css">
-        <link rel="stylesheet" href="./user/assets/css/itemProduct.css">
-        <link rel="stylesheet" href="./user/assets/css/footer.css">
-        <link rel="stylesheet" href="./user/assets/css/toast.css">
-        <link rel="stylesheet" href="./user/assets/css/responsive.css" />
+        <link rel="stylesheet" href="/user/assets/css/style.css" />
+        <link rel="stylesheet" href="/user/assets/css/slick.css" />
+        <link rel="stylesheet" href="/user/assets/css/slick-theme.css" />
+        <link rel="stylesheet" href="/user/assets/css/base.css" />
+        <link rel="stylesheet" href="/user/assets/css/inputNumber.css">
+        <link rel="stylesheet" href="/user/assets/css/itemProduct.css">
+        <link rel="stylesheet" href="/user/assets/css/footer.css">
+        <link rel="stylesheet" href="/user/assets/css/toast.css">
+        <link rel="stylesheet" href="/user/assets/css/responsive.css" />
     </head>
     <body>
         <%@include file="components/header.jsp" %>       
@@ -327,16 +326,14 @@
         <%@include file="components/footer.jsp" %>
         <script src="https://code.jquery.com/jquery-3.7.0.js" ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./user/assets/js/app.js"></script>
-        <script src="./user/assets/js/itemProduct.js"></script>
-        <script src="./user/assets/js/toast.js"></script>
-        <script>
-            <c:if test="${param.status != null && param.status == 1}">
-                                                                showSuccess("Thêm bình luận thành công");
-            </c:if>
-            <c:if test="${param.status != null && param.status==0}">
-                                                                showError("Thêm bình luận thất bại. Hãy thử lại");
-            </c:if>
-        </script>
+        <script src="/user/assets/js/app.js"></script>
+        <script src="/user/assets/js/itemProduct.js"></script>
+        <script src="/user/assets/js/toast.js"></script>
+        <c:if test="${param.status != null && param.status == 1}">
+            <script>showSuccess('Thêm bình luận thành công');</script>
+        </c:if>
+        <c:if test="${param.status != null && param.status==0}">
+            <script>showError('Thêm bình luận thất bại. Hãy thử lại');</script>
+        </c:if>
     </body>
 </html>

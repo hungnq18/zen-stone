@@ -169,7 +169,7 @@
             </div>
         </div>
     </section>
-    <script src="./admin/assets/js/validation.js"></script>
+    <script src="/admin/assets/js/validation.js"></script>
     <script>
                                                 // validation form
                                                 const fullname = document.getElementById('fullname'),
@@ -186,7 +186,7 @@
                                                 const inputsToValidate = [
                                                 {element: fullname, message: messageFullname, regex: /^.{1,}$/},
                                                 {element: email, message: messageEmail, regex: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/},
-                                                {element: phone, message: messagePhone, regex: /^[0]t: username, message: messageUsername, regex: / ^ [a - zA - Z0 - 9., !#$ % & '*+/=?^_]{6,100}$/},[0-9]{9}$/},
+                                                {element: phone, message: messagePhone, regex: /^[0][0-9]{9}$/},
                                                 {element: username, message: messageUsername, regex: /^[a-zA-Z0-9.,!#$%&'*+/=?^_]{6,100}$/},
                                                 {element: password, message: messagePassword, regex: /^[a-zA-Z0-9.,!#$%&'*+/=?^_]{8,}$/}
                                                 ];

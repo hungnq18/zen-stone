@@ -108,7 +108,7 @@
             <!-- page end-->
         </div>
     </section>
-    <script src="./admin/assets/js/validation.js"></script>
+    <script src="/admin/assets/js/validation.js"></script>
     <script src="./admin/ckeditor/ckeditor.js"></script> 
 
 

@@ -133,7 +133,7 @@
         </div>
         </div>
     </section>
-    <script src="./admin/assets/js/validation.js"></script>
+    <script src="/admin/assets/js/validation.js"></script>
     <script >
                                             const image = document.getElementById('image');
                                             const imageMessage = "Please choose a image valid";

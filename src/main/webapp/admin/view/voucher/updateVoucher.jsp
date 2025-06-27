@@ -97,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <script src="./admin/assets/js/validation.js"></script>
+        <script src="/admin/assets/js/validation.js"></script>
         <script>
             // validation form
             const name = document.getElementById('name'),

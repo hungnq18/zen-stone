@@ -23,27 +23,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- bootstrap-css -->
-    <base href="http://localhost:8080/" />
-    <link rel="icon" type="image/x-icon" href="./uploads/base/favicon.png">
-    <link rel="stylesheet" href="./admin/assets/css/bootstrap.min.css" >
+    <!-- <base href="http://localhost:8080/" /> -->
+    <link rel="icon" type="image/x-icon" href="/uploads/base/favicon.png">
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap.min.css" >
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <!-- //bootstrap-css -->
     <!-- Custom CSS -->
-    <link href="./admin/assets/css/style.css" rel='stylesheet' type='text/css' />
-    <link href="./admin/assets/css/style-responsive.css" rel="stylesheet"/>
+    <link href="/admin/assets/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="/admin/assets/css/style-responsive.css" rel="stylesheet"/>
     <!-- font CSS -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
-    <link rel="stylesheet" href="./admin/assets/css/toast.css">
-    <link rel="stylesheet" href="./admin/assets/css/myCustom.css">
+    <link rel="stylesheet" href="/admin/assets/css/toast.css">
+    <link rel="stylesheet" href="/admin/assets/css/myCustom.css">
     <!-- //font-awesome icons -->
-    <script src="./admin/assets/js/jquery2.0.3.min.js"></script>
+    <script src="/admin/assets/js/jquery2.0.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <script src="./admin/assets/js/filter.js"></script>
+    <script src="/admin/assets/js/filter.js"></script>
 </head>
 <body>
     <section id="container">
