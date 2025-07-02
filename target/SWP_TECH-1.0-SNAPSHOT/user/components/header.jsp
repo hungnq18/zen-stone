@@ -51,7 +51,7 @@
          <!--header with search--> 
         <div class="nav-with-search row m-0">
             <div class="logo col-lg-2 col-12">
-                <a href="/">
+                <a href="/home">
                     <img src="/user/assets/img/zen_logo.png" alt="Logo" />
                 </a>
             </div>

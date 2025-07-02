@@ -118,7 +118,7 @@ public class AuthUserController extends HttpServlet {
                         session.setAttribute("usernameRole", String.valueOf(account.getRole()));
                     }
 
-                    response.sendRedirect("/");
+                    response.sendRedirect("/home");
                     return;
 
                 } else {
