@@ -160,7 +160,7 @@ public class AuthUserController extends HttpServlet {
 
             if (isError) {
                 request.setAttribute("messageUserAuth", messageUserAuth);
-                request.getRequestDispatcher("/user/login.jsp").forward(request, response);
+                request.getRequestDispatcher("/auth/login").forward(request, response);
                 return;
             }
 
@@ -170,15 +170,15 @@ public class AuthUserController extends HttpServlet {
                 Cookie roleUserCookie = new Cookie("usernameRole", a.getRole() + "");
                 usernameCookie.setMaxAge(cookieMaxAge);
                 roleUserCookie.setMaxAge(cookieMaxAge);
-                usernameCookie.setPath("/");
-                roleUserCookie.setPath("/");
+                usernameCookie.setPath("/home");
+                roleUserCookie.setPath("/home");
                 response.addCookie(usernameCookie);
                 response.addCookie(roleUserCookie);
             } else {
                 session.setAttribute("usernameUser", a.getUsername());
                 session.setAttribute("usernameRole", a.getRole() + "");
             }
-            response.sendRedirect("/");
+            response.sendRedirect("/home");
             return;
         }
 
@@ -188,7 +188,7 @@ public class AuthUserController extends HttpServlet {
             String username = request.getParameter("username");
             if (adao.getAccountByUsername(username) != null) {
                 request.setAttribute("messageFailRegister", "Username already exists");
-                request.getRequestDispatcher("/user/register.jsp").forward(request, response);
+                request.getRequestDispatcher("/user/register").forward(request, response);
                 return;
             }
             String email = request.getParameter("email");
@@ -203,7 +203,7 @@ public class AuthUserController extends HttpServlet {
                 response.sendRedirect("/auth/login");
             } else {
                 request.setAttribute("messageFailRegister", "Register failed. Try again");
-                request.getRequestDispatcher("/user/register.jsp").forward(request, response);
+                request.getRequestDispatcher("/user/register").forward(request, response);
             }
         }
     }

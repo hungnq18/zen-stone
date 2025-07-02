@@ -115,7 +115,7 @@
         <nav class="navbar">
             <ul class="list-nav">
                 <li class="nav-item">
-                    <a href="/" class="nav-item-link">Trang chủ</a>
+                    <a href="/home" class="nav-item-link">Trang chủ</a>
                 </li>
                 <li class="nav-item">
                     <a href="/product" class="nav-item-link">
