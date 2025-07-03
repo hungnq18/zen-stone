@@ -33,6 +33,12 @@ public class PersonalUserController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // Kiểm tra đăng nhập
+        String loginUser = new Util.Authentication().isLogigUser(request);
+        if (loginUser == null) {
+            response.sendRedirect("/home");
+            return;
+        }
         String path = request.getRequestURI();
         String paths[] = path.split("/");
         if (path.startsWith("/personal/") && paths.length == 3) {
@@ -77,6 +83,12 @@ public class PersonalUserController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // Kiểm tra đăng nhập
+        String loginUser = new Util.Authentication().isLogigUser(request);
+        if (loginUser == null) {
+            response.sendRedirect("/home");
+            return;
+        }
         String path = request.getRequestURI();
         String paths[] = path.split("/");
         String username = paths[paths.length - 1];
