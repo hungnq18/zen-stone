@@ -81,16 +81,16 @@ public class ProductUserController extends HttpServlet {
     private void productPage(HttpServletRequest request, HttpServletResponse response, int page, int pageSize) {
         try {
             List<Category> categories = categoryDao.getCategoryNumberByStatus();
+            int totalProduct = productDao.getAllProductActive().size();
+            int totalPage = (int) Math.ceil((double) totalProduct / pageSize);
+            if (page < 1) page = 1;
+            if (page > totalPage && totalPage > 0) page = totalPage;
             List<Product> products = productDao.getProductsByPage(page, pageSize);
-            if (products.size() == 0 && page != 1) {
-                response.sendRedirect("/404");
-            } else {
-                request.setAttribute("categories", categories);
-                request.setAttribute("products", products);
-                request.setAttribute("page", page);
-                request.setAttribute("sizeProduct", productDao.getAllProductActive().size());
-                request.getRequestDispatcher("/user/product.jsp").forward(request, response);
-            }
+            request.setAttribute("categories", categories);
+            request.setAttribute("products", products);
+            request.setAttribute("page", page);
+            request.setAttribute("sizeProduct", totalProduct);
+            request.getRequestDispatcher("/user/product.jsp").forward(request, response);
         } catch (Exception e) {
             System.out.println("Product page: " + e);
         }

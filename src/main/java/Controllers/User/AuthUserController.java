@@ -170,8 +170,8 @@ public class AuthUserController extends HttpServlet {
                 Cookie roleUserCookie = new Cookie("usernameRole", a.getRole() + "");
                 usernameCookie.setMaxAge(cookieMaxAge);
                 roleUserCookie.setMaxAge(cookieMaxAge);
-                usernameCookie.setPath("/home");
-                roleUserCookie.setPath("/home");
+                usernameCookie.setPath("/");
+                roleUserCookie.setPath("/");
                 response.addCookie(usernameCookie);
                 response.addCookie(roleUserCookie);
             } else {
