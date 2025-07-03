@@ -13,10 +13,6 @@
         <c:redirect url="/home"/>
     </c:if>
 </c:if>
-<c:set value="${authUser.isLogigUser(req)}" var="usernameCheck" />
-<c:if test="${usernameCheck != null}">
-    <c:set var="usernameUser" value="${usernameCheck}"/>
-</c:if>
 
 <header style="background-color: #2e3a3f;">
     
@@ -71,21 +67,21 @@
             <div class="user-function col-lg-2 col-4">
                 <ul class="list-user-function">
                     <li class="user-function-item login-success">
-                        <c:if test="${usernameUser == null}">
+                        <c:if test="${authUser.isLogigUser(req) == null}">
                             <a href="/auth/login" class="user-function-item-link">
                                 <i class="bx bx-user"></i>
                                 <span>Đăng nhập</span>
                             </a>
                         </c:if>
-                        <c:if test="${usernameUser != null}">
-                            <a href="/personal/${usernameUser}" class="user-function-item-link">
+                        <c:if test="${authUser.isLogigUser(req) != null}">
+                            <a href="/personal/${authUser.isLogigUser(req)}" class="user-function-item-link">
                                 <i class="bx bx-user"></i>
-                                <span>${usernameUser}</span>
+                                <span>${authUser.isLogigUser(req)}</span>
                             </a>
                             <div class="drop-down-personal">
                                 <ul class="list-option-personal">
                                     <li class="item-option-personal">
-                                        <a href="/personal/${usernameUser}" class="item-option-personal-link">Trang cá nhân</a>
+                                        <a href="/personal/${authUser.isLogigUser(req)}" class="item-option-personal-link">Trang cá nhân</a>
                                     </li>
                                     <li class="item-option-personal">
                                         <a href="/logout" class="item-option-personal-link">Đăng xuất</a>
