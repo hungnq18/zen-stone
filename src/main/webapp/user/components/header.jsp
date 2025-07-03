@@ -67,28 +67,30 @@
             <div class="user-function col-lg-2 col-4">
                 <ul class="list-user-function">
                     <li class="user-function-item login-success">
-                        <c:if test="${authUser.isLogigUser(req) == null}">
-                            <a href="/auth/login" class="user-function-item-link">
-                                <i class="bx bx-user"></i>
-                                <span>Đăng nhập</span>
-                            </a>
-                        </c:if>
-                        <c:if test="${authUser.isLogigUser(req) != null}">
-                            <a href="/personal/${authUser.isLogigUser(req)}" class="user-function-item-link">
-                                <i class="bx bx-user"></i>
-                                <span>${authUser.isLogigUser(req)}</span>
-                            </a>
-                            <div class="drop-down-personal">
-                                <ul class="list-option-personal">
-                                    <li class="item-option-personal">
-                                        <a href="/personal/${authUser.isLogigUser(req)}" class="item-option-personal-link">Trang cá nhân</a>
-                                    </li>
-                                    <li class="item-option-personal">
-                                        <a href="/logout" class="item-option-personal-link">Đăng xuất</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </c:if>
+                        <c:choose>
+                            <c:when test="${authUser.isLogigUser(req) == null}">
+                                <a href="/auth/login" class="user-function-item-link">
+                                    <i class="bx bx-user"></i>
+                                    <span>Đăng nhập</span>
+                                </a>
+                            </c:when>
+                            <c:otherwise>
+                                <a href="/personal/${authUser.isLogigUser(req)}" class="user-function-item-link">
+                                    <i class="bx bx-user"></i>
+                                    <span>${authUser.isLogigUser(req)}</span>
+                                </a>
+                                <div class="drop-down-personal">
+                                    <ul class="list-option-personal">
+                                        <li class="item-option-personal">
+                                            <a href="/personal/${authUser.isLogigUser(req)}" class="item-option-personal-link">Trang cá nhân</a>
+                                        </li>
+                                        <li class="item-option-personal">
+                                            <a href="/logout" class="item-option-personal-link">Đăng xuất</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </c:otherwise>
+                        </c:choose>
                     </li>
                     <li class="user-function-item cart">
                         <a href="/cart" class="user-function-item-link">
