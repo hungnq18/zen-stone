@@ -88,9 +88,7 @@
                                         <a href="/personal/${usernameUser}" class="item-option-personal-link">Trang cá nhân</a>
                                     </li>
                                     <li class="item-option-personal">
-                                        <a href="?logout=true" class="item-option-personal-link">
-                                            Đăng xuất
-                                        </a>
+                                        <a href="/logout" class="item-option-personal-link">Đăng xuất</a>
                                     </li>
                                 </ul>
                             </div>

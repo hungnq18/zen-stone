@@ -487,7 +487,7 @@
             function addMessage(content, sender) {
                 var div = document.createElement('div');
                 div.className = 'message ' + sender;
-                div.innerText = content;
+                div.innerHTML = content;
                 var messagesContainer = document.getElementById('messages');
                 messagesContainer.appendChild(div);
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;

@@ -50,7 +50,17 @@ public class CreatePaymentServlet extends HttpServlet {
 
         // Bước 3: Lấy total từ bill và tạo amount
         int amount = (int) Math.round(bill.getTotal());
-long orderCode = System.currentTimeMillis() + (long) (Math.random() * 1000);
+        long orderCode = System.currentTimeMillis() + (long) (Math.random() * 1000);
+
+        // Lấy base URL động cho production
+        String baseUrl = request.getScheme() + "://" + request.getServerName();
+        if ((request.getScheme().equals("http") && request.getServerPort() != 80) ||
+            (request.getScheme().equals("https") && request.getServerPort() != 443)) {
+            baseUrl += ":" + request.getServerPort();
+        }
+        if (baseUrl.endsWith("/")) baseUrl = baseUrl.substring(0, baseUrl.length() - 1);
+        String cancelUrl = baseUrl + "/order?status=fail";
+        String returnUrl = baseUrl + "/order?transactionStatus=success&orderId=" + orderCode;
 
         System.out.println("[INFO] Đang tạo link thanh toán cho đơn hàng #" + orderCode + " với số tiền: " + amount);
         
@@ -59,8 +69,8 @@ long orderCode = System.currentTimeMillis() + (long) (Math.random() * 1000);
                 .orderCode(orderCode)
                 .amount(amount)
                 .description("Payment" + orderCode)
-                .cancelUrl("http://localhost:8080/order?status=fail")
-                .returnUrl("http://localhost:8080/order?transactionStatus=success&orderId=" + orderCode)
+                .cancelUrl(cancelUrl)
+                .returnUrl(returnUrl)
                 .build();
 
         // Bước 5: Tạo link thanh toán
