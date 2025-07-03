@@ -8,9 +8,9 @@ RUN mvn clean package -DskipTests
 
 # Stage 2: Create the final image with Tomcat 10 (Servlet 5+)
 FROM tomcat:10.1-jdk17
-# Remove the default ROOT webapp
-RUN rm -rf /usr/local/tomcat/webapps/ROOT
-# Copy the built WAR file from the build stage to Tomcat's webapps directory
+# Remove all default webapps to ensure clean context
+RUN rm -rf /usr/local/tomcat/webapps/*
+# Copy the built WAR file from the build stage to Tomcat's webapps directory as ROOT.war
 COPY --from=build /app/target/SWP_TECH-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose port 8080

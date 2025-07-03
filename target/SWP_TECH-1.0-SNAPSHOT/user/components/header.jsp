@@ -10,7 +10,7 @@
 <jsp:useBean id="authUser" class="Util.Authentication" scope="page"></jsp:useBean>
 <c:if test="${isLogoutUser}">
     <c:if test="${authUser.LogoutUser(req, resp, session)}">
-        <c:redirect url="/"/>
+        <c:redirect url="/home"/>
     </c:if>
 </c:if>
 <c:set value="${authUser.isLogigUser(req)}" var="usernameCheck" />
