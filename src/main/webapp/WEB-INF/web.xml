@@ -173,10 +173,6 @@
         <servlet-name>ChatBotServlet</servlet-name>
         <servlet-class>BotAI.ChatBotServlet</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>LogoutUserController</servlet-name>
-        <servlet-class>Controllers.User.LogoutUserController</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>CategoryController</servlet-name>
         <url-pattern>/admin/category/*</url-pattern>
@@ -368,10 +364,6 @@
     <servlet-mapping>
         <servlet-name>ChatBotServlet</servlet-name>
         <url-pattern>/chat-bot</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LogoutUserController</servlet-name>
-        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
