@@ -5,14 +5,7 @@
 <jsp:useBean id="cartMini" class="Util.Cart" ></jsp:useBean>
 <jsp:useBean id="categoriesBean" class="DAO.CategoryDao"></jsp:useBean>
 <jsp:useBean id="companyBean" class="DAO.CompanyDao"></jsp:useBean>
-<c:set var="isLogoutUser" value="${param.logout != null}" />
-<c:set var="session" value="${req.getSession()}" />
 <jsp:useBean id="authUser" class="Util.Authentication" scope="page"></jsp:useBean>
-<c:if test="${isLogoutUser}">
-    <c:if test="${authUser.LogoutUser(req, resp, session)}">
-        <c:redirect url="/home"/>
-    </c:if>
-</c:if>
 
 <header style="background-color: #2e3a3f;">
     
